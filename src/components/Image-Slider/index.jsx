@@ -8,6 +8,8 @@ export default function ImageSlider({ url, limit, page }) {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  //FUNCTION TO FETCH API URL
+
   async function fetchImages(getUrl) {
     try {
       setLoading(true);
