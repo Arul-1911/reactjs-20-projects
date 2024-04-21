@@ -49,6 +49,7 @@ export default function LoadMore() {
               <div className="product" key={item.id}>
                 <img src={item.thumbnail} alt={item.title} />
                 <p>{item.title}</p>
+                <p>${item.price}</p>
               </div>
             ))
           : ""}

@@ -1,0 +1,21 @@
+.tree-view-container{
+   min-height: 96vh;
+   width: 350px;
+   background: rgb(0,71,110);
+   flex-wrap: wrap;
+  
+}
+
+.menu-item-container{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   cursor: pointer;
+   color: aliceblue;
+}
+
+.menu-list-container{
+   list-style: none;
+   margin-top: 0;
+   margin-bottom: 0;
+}
