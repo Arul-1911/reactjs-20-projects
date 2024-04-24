@@ -1,6 +1,7 @@
 // import Accordian from './components/Accordian'
 // import RandomColor from './components/Random-color'
 
+import Generator from "./components/QR-code-generator";
 import TreeView from "./components/Tree-view";
 import menus from "./components/Tree-view/data";
 
@@ -19,7 +20,8 @@ function App() {
         limit={"10"}
       /> */}
       {/* <LoadMore/> */}
-      <TreeView menus={menus}/>
+      {/* <TreeView menus={menus}/> */}
+      <Generator/>
     </>
   );
 }
