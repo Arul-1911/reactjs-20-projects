@@ -1,9 +1,10 @@
 // import Accordian from './components/Accordian'
 // import RandomColor from './components/Random-color'
 
-import Generator from "./components/QR-code-generator";
-import TreeView from "./components/Tree-view";
-import menus from "./components/Tree-view/data";
+// import Generator from "./components/QR-code-generator";
+// import TreeView from "./components/Tree-view";
+// import menus from "./components/Tree-view/data";
+import ThemeChanger from "./components/light-dark-mode";
 
 // import ImageSlider from "./components/Image-Slider";
 // import LoadMore from "./components/Load-More";
@@ -21,7 +22,8 @@ function App() {
       /> */}
       {/* <LoadMore/> */}
       {/* <TreeView menus={menus}/> */}
-      <Generator/>
+      {/* <Generator/> */}
+      <ThemeChanger/>
     </>
   );
 }
