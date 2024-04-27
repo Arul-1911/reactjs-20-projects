@@ -25,12 +25,6 @@ export default function ScrollIndicator({ url }) {
   };
 
   const handleScrollPercentage = () => {
-    console.log(
-      document.body.scrollTop,
-      document.documentElement.scrollTop,
-      document.documentElement.scrollHeight,
-      document.documentElement.clientHeight
-    );
     const howMuchScrolled =
       document.body.scrollTop || document.documentElement.scrollTop;
     const height =
@@ -51,13 +45,29 @@ export default function ScrollIndicator({ url }) {
     };
   }, []);
 
-  console.log(data, loading);
+  if(errorMessage){
+   return <div>Error in Fetching Data!!!!</div>
+  }
+
+  if(loading){
+   return <div>Loading Data....</div>
+  }
+
+  console.log(scrollPercent);
   return (
     <>
-      <h1>custom Scroll Indicator</h1>
+      <div className="top-conatainer">
+        <h1 className="title">Custom Scroll Indicator</h1>
+        <div className="scroll-progress-container">
+          <div
+            className="cuurent-progress"
+            style={{ width: `${scrollPercent}%` }}
+          ></div>
+        </div>
+      </div>
       <div className="data-container">
         {data?.length > 0
-          ? data.map((dataItem) => <li key={dataItem.id}>{dataItem.title}</li>)
+          ? data.map((dataItem) => <div className="content" key={dataItem.id}>{dataItem.id}. {dataItem.title}</div>)
           : null}
       </div>
     </>
