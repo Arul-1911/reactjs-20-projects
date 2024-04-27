@@ -5,6 +5,7 @@
 // import TreeView from "./components/Tree-view";
 // import menus from "./components/Tree-view/data";
 import ThemeChanger from "./components/light-dark-mode";
+import ScrollIndicator from "./components/scroll-indicator";
 
 // import ImageSlider from "./components/Image-Slider";
 // import LoadMore from "./components/Load-More";
@@ -23,7 +24,8 @@ function App() {
       {/* <LoadMore/> */}
       {/* <TreeView menus={menus}/> */}
       {/* <Generator/> */}
-      <ThemeChanger/>
+      {/* <ThemeChanger/> */}
+      <ScrollIndicator url={`https://dummyjson.com/products?limit=100`}/>
     </>
   );
 }
