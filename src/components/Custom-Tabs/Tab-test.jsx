@@ -22,9 +22,6 @@ export default function TabTest(){
       }
    ]
 
-   // function HandleChange(currentTabIndex){
-   //    console.log(currentTabIndex);
-   // }
 
    return(
       <>
