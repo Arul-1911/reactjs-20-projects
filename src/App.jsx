@@ -1,11 +1,13 @@
 // import Accordian from './components/Accordian'
 // import RandomColor from './components/Random-color'
 
+import TabTest from "./components/Custom-Tabs/Tab-test";
+
 // import Generator from "./components/QR-code-generator";
 // import TreeView from "./components/Tree-view";
 // import menus from "./components/Tree-view/data";
-import ThemeChanger from "./components/light-dark-mode";
-import ScrollIndicator from "./components/scroll-indicator";
+// import ThemeChanger from "./components/light-dark-mode";
+// import ScrollIndicator from "./components/scroll-indicator";
 
 // import ImageSlider from "./components/Image-Slider";
 // import LoadMore from "./components/Load-More";
@@ -25,7 +27,8 @@ function App() {
       {/* <TreeView menus={menus}/> */}
       {/* <Generator/> */}
       {/* <ThemeChanger/> */}
-      <ScrollIndicator url={`https://dummyjson.com/products?limit=100`}/>
+      {/* <ScrollIndicator url={`https://dummyjson.com/products?limit=100`}/> */}
+      <TabTest/>
     </>
   );
 }
