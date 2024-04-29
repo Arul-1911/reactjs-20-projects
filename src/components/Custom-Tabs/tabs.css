@@ -1,16 +1,24 @@
 .wrapper{
-   padding: 8px;
+   padding: 118px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 
 }
 
 .heading{
    display: flex;
    justify-content: center;
-   margin-bottom: 12px;
+   margin-bottom: 112px;
+   margin-top: 50px;
 }
 
 .content{
    color: red;
+   text-align: center;
+   height: 300px;
+   font-size: 20px;
+   overflow: auto;
 }
 
 .tab-item{
