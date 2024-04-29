@@ -22,13 +22,13 @@ export default function TabTest(){
       }
    ]
 
-   function HandleChange(currentTabIndex){
-      console.log(currentTabIndex);
-   }
+   // function HandleChange(currentTabIndex){
+   //    console.log(currentTabIndex);
+   // }
 
    return(
       <>
-      <Tabs tabsContent={tabs} onChange={HandleChange}/>
+      <Tabs tabsContent={tabs} />
       </>
    )
 }
